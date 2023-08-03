@@ -1,0 +1,9 @@
+1.Modification des textes du site afin d'améliorer le référencement
+2.Améliorer le référencement local à l'aide de micros-données (utilisation de Schéma.org requise)
+3.Créer un lien entre les réseaux sociaux et le site
+4.Ajout d'une adresse
+5.Ajout d'un numéro de tél
+6.Ajout de balises méta
+7.Améliorer les performances globales du site
+8.Modifier les tailles des images
+9.Améliorer l'accessibilité du site
