@@ -6,6 +6,11 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
+.social-icons {
+	display: flex;
+	justify-content: space-between;
+	width: 80px;
+}
 .top-header {
 	background-color: white;
 	position: sticky;
