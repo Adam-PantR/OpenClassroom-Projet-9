@@ -9,19 +9,22 @@
 	<meta property="og:description"   content="Lien comprenant une page fonctionnelle facebook" />
 	<meta property="og:url" content="https://www.facebook.com/jhofficiel" />
 	<meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" /> -->
+
 	<title>Nina Carducci</title>
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" as="style">
-	<link rel="stylesheet" href="./assets/style.css" >
-	<link href="https://fonts.googleapis.com&display=swap">
-	<link href="https://fonts.gstatic.com&display=swap" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+	<link rel="preload" href="/assets/images/slider/ryoji-iwata.webp" as="image">
+
+
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" as="style" defer>
+	<link rel="stylesheet" href="./assets/style.css" defer>
+	<!-- <link href="https://fonts.googleapis.com&display=swap"> -->
+	<!-- <link href="https://fonts.gstatic.com&display=swap" crossorigin> -->
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap&display=swap" rel="stylesheet"> -->
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> -->
 	<meta charset="UTF-8">
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-	<!-- <script rel="preload" src="jquery-localy-install.js"></script> -->
+	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js" ></script>
+	<script src="./assets/scripts.js"></script>
 </head>
 <body>
 <div class="top-header">
@@ -67,7 +70,7 @@
 </div>
 <div id="about">
 	<div class="picture left">
-		<img src="./assets/images/nina.webp" width="560px" height="548px" alt="photo de profil">
+		<img src="./assets/images/nina.webp" loading="lazy" width="560px" height="548px" alt="photo de profil">
 	</div>
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
@@ -93,15 +96,15 @@
 	<h3 class="title">Portfolio</h3>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul.webp" alt="photo portfolio" width="440px" height="440px" fetchpriority="low"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou.webp" alt="photo portfolio" width="440px" height="440px" fetchpriority="low"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman.webp" alt="photo portfolio" width="440px" height="440px" fetchpriority="low"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing.webp" alt="photo portfolio" width="440px" height="440px" fetchpriority="low"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji.webp" alt="photo portfolio" width="440px" height="440px" fetchpriority="low"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens.webp" alt="photo portfolio" width="440px" height="440px" fetchpriority="low"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg.webp" alt="photo portfolio" width="440px" height="440px" fetchpriority="low"/>
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill.webp" alt="photo portfolio" width="440px" height="440px" fetchpriority="low"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe.webp" alt="photo portfolio" width="440px" height="440px" fetchpriority="low"/>
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul.webp" loading="lazy" alt="photo portfolio" width="440px" height="440px" fetchpriority="low"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou.webp" loading="lazy" alt="photo portfolio" width="440px" height="440px" fetchpriority="low"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman.webp" loading="lazy" alt="photo portfolio" width="440px" height="440px" fetchpriority="low"/>
+			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing.webp" loading="lazy" alt="photo portfolio" width="440px" height="440px" fetchpriority="low"/>
+			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji.webp" loading="lazy" alt="photo portfolio" width="440px" height="440px" fetchpriority="low"/>
+			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens.webp" loading="lazy" alt="photo portfolio" width="440px" height="440px" fetchpriority="low"/>
+			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg.webp" loading="lazy" alt="photo portfolio" width="440px" height="440px" fetchpriority="low"/>
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill.webp" loading="lazy" alt="photo portfolio" width="440px" height="440px" fetchpriority="low"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe.webp" loading="lazy" alt="photo portfolio" width="440px" height="440px" fetchpriority="low"/>
 		</div>
 	</div>
 	<div class="quote">
