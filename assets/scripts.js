@@ -148,7 +148,7 @@ function startAutoSlide() {
         }
         setActiveDot();
         positionCarrousel();
-    }, 5000); 
+    }, 10000); 
 }
 
 
