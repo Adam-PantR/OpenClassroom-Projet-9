@@ -46,3 +46,96 @@ $(document).ready(function() {
         tagsPosition: 'top'
     });
 });
+
+//Ajout du carrousel
+
+
+// ----------------------------------------------------------------------------------------------------------------
+
+// SLIDE
+
+// ----------------------------------------------------------------------------------------------------------------
+
+//On défini la slide de départ comme celle à la position 0
+let currentSlide = 0;
+
+//On récupère tous les éléments de l'HTML nécessaire
+const container = document.querySelector(".carousel-inner");
+const items = document.querySelectorAll(".banner-img");
+
+//On défini la taille du carrousel et des images
+const totalSlides = items.length;
+const imageWidth = items[0].clientWidth;
+
+//On donne la taille appliquée au décalage de l'axe X lors du slide
+function positionCarrousel() {
+	container.style.transform = `translateX(-${currentSlide * imageWidth}px)`;
+  }
+
+//On créer le bouton gauche
+  const left = document.querySelector(".carousel-control-prev");
+left.addEventListener("click", () => {
+	//Décalage sur la gauche
+  if (currentSlide > 0) {
+    currentSlide--;
+  } 
+  //remise à la fin du carrousel si dépassé le début
+  else {
+    currentSlide = totalSlides - 1;
+  }
+  //On change la position du DOT actif (qui sera défini par la suite)
+  setActiveDot();
+  positionCarrousel();
+});
+
+//On créer le bouton droit
+const right = document.querySelector(".carousel-control-next");
+right.addEventListener("click", () => {
+	//Décalage sur la droite
+    console.log(currentSlide)
+  if (currentSlide < totalSlides - 1) {
+    currentSlide++;
+  } 
+  //remise au départ du carrousel si arrivé au bout
+  else {
+    currentSlide = 0;
+  }
+   //On change la position du DOT actif (qui sera défini par la suite)
+  setActiveDot();
+  positionCarrousel();
+});
+
+
+// ----------------------------------------------------------------------------------------------------------------
+
+// DOTS
+
+// ----------------------------------------------------------------------------------------------------------------
+
+
+const dots = document.querySelectorAll('.dot');
+const slider = document.querySelector('.carousel-inner');
+
+// On repprend tous les élement possédant la class dot
+dots.forEach((dot, index) => {
+  // On défini dot comme l'élément qui sera actif, et qui changera de slide visile au clique 
+  dot.addEventListener('click', () => {
+	// On défini l'index du dot sur lequel on clique, il est le même appelé plus haut lors des lide gauche et droit
+    currentSlide = index;
+    setActiveDot();
+    setSliderPosition();
+  });
+});
+
+// On créer une fonction pour définir visuelement le dot qui est actif et se repéré sur le carrousel
+function setActiveDot() {
+  dots.forEach(dot => dot.classList.remove('dot_selected'));
+  dots[currentSlide].classList.add('dot_selected');
+}
+// On défini le nombre de slide à déplacer lors d'un clique. Il sera caclculé par rapport au nombre totaux de slide, ici 4, donc 25% par slide
+function setSliderPosition() {
+  slider.style.transform = `translateX(-${currentSlide * 100/3}%)`;
+}
+setActiveDot();
+setSliderPosition();
+

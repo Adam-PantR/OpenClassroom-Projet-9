@@ -12,20 +12,22 @@
 
 	<title>Nina Carducci</title>
 
-	<link rel="preload" href="/assets/images/slider/ryoji-iwata.webp" as="image">
+	<!-- <link rel="preload" href="/assets/images/slider/ryoji-iwata.webp" as="image"> -->
 
 
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" as="style" defer>
 	<link rel="stylesheet" href="./assets/style.css" media="print" onload="this.media='all'">
 	<link rel="preload" href="styles.css" as="style">
 	<link rel="preload" href="script.js" as="script">
+
+
 	<!-- <link rel="stylesheet" href="./assets/style.css" defer> -->
 	<!-- <link href="https://fonts.googleapis.com&display=swap"> -->
 	<!-- <link href="https://fonts.gstatic.com&display=swap" crossorigin> -->
 	<!-- <link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap&display=swap" rel="stylesheet"> -->
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> -->
 	<meta charset="UTF-8">
-	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
+	<!-- <script src="./assets/bootstrap/bootstrap.bundle.js" defer></script> -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/scripts.js" defer></script>
 </head>
@@ -46,19 +48,19 @@
 
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="dot dot-selected" aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="dot" aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="dot" aria-label="Slide 3"></button>
 		</div>
 		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img src="./assets/images/slider/ryoji-iwata.webp" class="d-block w-100" width="1920px" height="888px" alt="...">
+			<div class="carousel-main-div">
+				<img src="./assets/images/slider/ryoji-iwata.webp" class="banner-img" width="1920px" height="888px" alt="...">
 			</div>
-			<div class="carousel-item">
-				<img src="./assets/images/slider/nicholas-green.webp" class="d-block w-100" width="1920px" height="888px" alt="...">
+			<div class="carousel-main-div">
+				<img src="./assets/images/slider/nicholas-green.webp" class="banner-img" width="1920px" height="888px" alt="...">
 			</div>
-			<div class="carousel-item">
-				<img src="./assets/images/slider/edward-cisneros.webp" class="d-block w-100" width="1920px" height="888px" alt="...">
+			<div class="carousel-main-div">
+				<img src="./assets/images/slider/edward-cisneros.webp" class="banner-img" width="1920px" height="888px" alt="...">
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
