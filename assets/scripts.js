@@ -92,7 +92,6 @@ left.addEventListener("click", () => {
 const right = document.querySelector(".carousel-control-next");
 right.addEventListener("click", () => {
 	//Décalage sur la droite
-    console.log(currentSlide)
   if (currentSlide < totalSlides - 1) {
     currentSlide++;
   } 
