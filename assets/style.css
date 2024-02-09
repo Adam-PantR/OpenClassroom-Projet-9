@@ -31,3 +31,9 @@
 	height: 100%;
 	z-index: -1;
 }
+.dot-selected {
+	background-color: #FFF;
+}
+.nav-item{
+	cursor: pointer;
+}
