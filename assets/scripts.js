@@ -127,15 +127,30 @@ dots.forEach((dot, index) => {
   });
 });
 
-// On créer une fonction pour définir visuelement le dot qui est actif et se repéré sur le carrousel
+// Fonction d'auto slide
 function setActiveDot() {
   dots.forEach(dot => dot.classList.remove('dot_selected'));
   dots[currentSlide].classList.add('dot_selected');
 }
-// On défini le nombre de slide à déplacer lors d'un clique. Il sera caclculé par rapport au nombre totaux de slide, ici 4, donc 25% par slide
+
 function setSliderPosition() {
   slider.style.transform = `translateX(-${currentSlide * 100/3}%)`;
 }
 setActiveDot();
 setSliderPosition();
 
+// Délai de 5 secondes
+function startAutoSlide() {
+    setInterval(() => {
+        if (currentSlide < totalSlides - 1) {
+            currentSlide++;
+        } else {
+            currentSlide = 0;
+        }
+        setActiveDot();
+        positionCarrousel();
+    }, 5000); 
+}
+
+
+startAutoSlide();
